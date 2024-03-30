@@ -18,7 +18,6 @@ html {
 }
 body {
   font-family: "open sans", sans-serif;
-  background-color: black;
 }
 ul {
   list-style: none;
@@ -49,6 +48,49 @@ ul {
   }
 }
 /* End global rules */
+/* start component  */
+.main-heading {
+  text-align: center;
+}
+.main-heading h2 {
+  font-weight: normal;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 70px;
+  position: relative;
+}
+.main-heading h2::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -30px;
+  background-color: #333;
+  height: 2px;
+  width: 120px;
+}
+.main-heading h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -38px;
+  transform: translateX(-50%);
+  height: 14px;
+  width: 14px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  background-color: white;
+}
+.main-heading p {
+  width: 550px;
+  margin: 0 auto 100px;
+  max-width: 100%;
+  line-height: 2;
+  color: #777;
+}
+
+/* end component  */
+
 /* start header  */
 header {
   position: absolute;
