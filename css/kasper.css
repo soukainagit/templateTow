@@ -605,7 +605,7 @@ header nav .form i {
 .testimonials .content {
   display: flex;
   margin-bottom: 30px;
-  align-items: center;
+  justify-content: center;
 }
 
 .testimonials .content img {
@@ -656,7 +656,7 @@ header nav .form i {
 .our-skills .prog-holder .prog {
   margin-bottom: 30px;
   height: 35px;
-  width: 500px;
+  max-width: 100%;
   background-color: #ccc;
 }
 .our-skills .prog-holder .prog span {
