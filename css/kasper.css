@@ -714,3 +714,92 @@ header nav .form i {
   display: block;
 }
 /* end quote */
+/* start pricing */
+.pricing {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  text-align: center;
+}
+.pricing .container {
+}
+.pricing .container .plans {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-column-gap: 30px;
+}
+.pricing .container .plans .plan {
+  background-color: whitesmoke;
+  margin-top: 30px;
+}
+.pricing .container .plans .plan .head {
+  border-top: 1px solid var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+  padding: 20px;
+}
+.pricing .container .plans .plan .head h3 {
+  font-weight: normal;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.pricing .container .plans .plan .head span {
+  font-weight: bold;
+  font-size: 40px;
+  display: block;
+}
+.pricing .container .plans .plan .head span::before {
+  content: "$";
+  font-size: 22px;
+  font-weight: normal;
+  position: relative;
+  top: -18px;
+  margin-right: 8px;
+}
+.pricing .container .plans .plan .head span::after {
+  content: "/Mo";
+  font-size: 22px;
+  position: relative;
+  margin-left: 8px;
+}
+.pricing .container .plans ul {
+  border-bottom: 1px solid var(--main-color);
+  padding: 30px;
+}
+.pricing .container .plans ul li {
+  padding: 30px;
+  position: relative;
+}
+.pricing .container .plans ul li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 140px;
+  background-color: var(--main-color);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.pricing .container .plans ul li:nth-child(2):after {
+  height: 3px;
+}
+.pricing .container .plans .foot {
+  padding: 30px;
+}
+.pricing .container .plans .foot a {
+  padding: 10px;
+  border: 1px solid var(--main-color);
+  text-decoration: none;
+  font-size: 21px;
+}
+
+.pricing .container .contactUs .contact-text {
+  font-size: 24px;
+  font-weight: 300;
+  margin: 50px;
+}
+.pricing .container .contactUs .contact-link {
+  background-color: var(--main-color);
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+}
+/* end pricing */
